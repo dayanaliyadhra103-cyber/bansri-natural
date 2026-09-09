@@ -149,7 +149,8 @@ h1{font-size:43px}
         <tr><td>9 KG</td><td>₹1900</td></tr>
         <tr><td>10 KG</td><td>₹2100</td></tr>
       </table>
-      <p style="margin-bottom:0">🚚 Shipping charge: Free</p>
+      <p style="margin-bottom:0">🚚 Shipping charge: ₹100</p>
+      <p style="margin-bottom:0"> total price:<select>
     </div>
   </div>
 </section>
@@ -190,10 +191,13 @@ h1{font-size:43px}
             <option value="5">5 KG — ₹1000</option><option value="6">6 KG — ₹1300</option>
             <option value="7">7 KG — ₹1500</option><option value="8">8 KG — ₹1700</option>
             <option value="9">9 KG — ₹1900</option><option value="10">10 KG — ₹2100</option>
-          </select>
+          </label>="shipping charge ₹100</label
+           price + shipping charge + total price                    
         </div>
       </div>
-      <div class="total"><span>Total Price</span><strong id="totalPrice">₹220</strong></div>
+      <div class="total"><span>Price</span><strong id="Price">₹220</strong></div>
+      <div class="shipping charge"><span></span><strong id="shipping charge">₹100</strong></div>
+      <div class="total price"><span></span><strong id="total price">₹320</strong></div>
       <button type="button" class="wa" onclick="sendWhatsApp()">📱 Order on WhatsApp</button>
       <p class="note">WhatsApp message will be prepared automatically. Replace the WhatsApp number in the script below with your business number.</p>
     </form>
@@ -209,6 +213,8 @@ h1{font-size:43px}
 
 <script>
 const prices={1:220,2:440,3:640,4:850,5:1000,6:1300,7:1500,8:1700,9:1900,10:2100};
+const shippingcharge=100
+const totalprices= 320
 const WA_NUMBER="918758781753";
 
 function showOnly(id){
